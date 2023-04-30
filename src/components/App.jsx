@@ -20,20 +20,6 @@ handleChange = e => {
     this.setState({ [name]: value });
 };
 
-// handleSubmit = e => {
-//   const id = nanoid();
-//   const name = e.name;
-//   const number = e.number;
-//   const contactsLists = [...this.state.contacts];
-  
-//   if (contactsLists.findIndex(contact => name === contact.name) !== -1) {
-//     alert(`${name} is already in contacts.`);
-//   } else {
-//     contactsLists.push({ name, id, number });
-//   }
-
-//   this.setState({ contacts: contactsLists });
-// };
 
 handleSubmit =  ({ name, number }) => {
   const loweredName = name.toLowerCase();
