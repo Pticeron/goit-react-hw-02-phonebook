@@ -33,9 +33,9 @@ handleSubmit =  ({ name, number }) => {
       }));
 };
 
-handleDelete = id => {
+handleDelete = e => {
   this.setState(prevState => ({
-    contacts: prevState.contacts.filter(contact => contact.id !== id),
+    contacts: prevState.contacts.filter(contact => contact.id !== e),
   }));
 };
 
